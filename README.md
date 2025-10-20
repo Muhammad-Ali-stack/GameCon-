@@ -14,4 +14,5 @@ In this game, the player must survive waves of monsters attacking from all direc
 1. Clone the repository:
    ```bash
    git clone https://github.com/Muhammad-Ali-stack/GameCon-clone.git
-   cd GameCon-clone
+   pip install pygame
+   python main.py
