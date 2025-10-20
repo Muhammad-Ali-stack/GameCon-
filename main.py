@@ -51,6 +51,13 @@ class Game:
         self.weapon.draw()
         # self.map.draw()
         # self.player.draw()
+        self.draw_footer()
+
+    def draw_footer(self):
+        font = pg.font.Font(None, 24)
+        text = font.render('Made by Abae salae team', True, (200, 200, 200))
+        text_rect = text.get_rect(center=(WIDTH // 2, HEIGHT - 20))
+        self.screen.blit(text, text_rect)
 
     def check_events(self):
         self.global_trigger = False
